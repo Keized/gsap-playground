@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+main {
+    height: 100vh;
+    clip-path: polygon(45% 50%, 55% 50%, 55% 50%, 45% 50%);
+}
+
+nav {
+    opacity: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav li {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: auto;
+}
+
+
+header {
+    height: 100vh;
+    width: 100%;
+}
+
+header .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+}
+
+header .header__content {
+    padding: 2rem;
+    margin-bottom: 200px;
+    max-width: 700px;
+    font-weight: 600;
+    font-size: 84px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+}
+
+header .header__image-container {
+    background-image: url('../images/mountain.jpg');
+    background-size: cover;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: -1;
+    position: fixed;
+}
+
+
+footer {
+    background: #333;
+    height: 30vh;
+}
+
+section {
+    padding: 1rem;
+    padding-top: 100px;
+    background: white;
+    height: 100vh;
+    position: relative;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+section .shadow {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, #FFFFFF, #FFFFFF00);
+    height: 100px;
+}
